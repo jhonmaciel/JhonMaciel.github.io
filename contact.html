@@ -8,11 +8,47 @@
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="index.html">Home page</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li style="background-color: chartreuse;"><a href="contact.html">About me</a></li>
-        </ul>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul style="background-color: antiquewhite; width: 278px;">
+                    <li><a href="index.html">Home page</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">About me</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Contact Us</h2>
+                <p>Feel free to reach out to me using the form below:</p>
+            </section>
+
+            <section>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

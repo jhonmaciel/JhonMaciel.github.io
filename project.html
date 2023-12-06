@@ -5,19 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <header >
-        <ul style="background-color: brown;">
-            <li><a href="index.html">Home page</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="contact.html">About me</a></li>
-        </ul>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul style="background-color: antiquewhite; width: 278px;">
+                    <li><a href="index.html">Home page</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">About me</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    
+    <main>
+        <div class="container">
+            <section>
+                <h2>My Projects</h2>
+                <h4>This is how it will look like when I add some projects to it, but for now it is just a demonstration</h4>
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1.</p>
+                </div>
+
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2.</p>
+                </div>
+
+                <!-- Add more project sections as needed -->
+            </section>
+
+            <div class="project-container">
+                <div class="project">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3.</p>
+                </div>
+        
+                <div class="project">
+                    <img src="project4.jpg" alt="Project 4">
+                    <h3>Project 4</h3>
+                    <p>Description of Project 4.</p>
+                </div>
+
+                <div class="project">
+                    <img src="project5.jpg" alt="Project 5">
+                    <h3>Project 5</h3>
+                    <p>Description of Project 5.</p>
+                </div>
+        
+                <!-- Add more project divs as needed -->
+            </div> 
+        </div>
+
+
+    </main>
+
     <footer>
-        <ol>
-            <li></li>
-        </ol>
+        <div class="container">
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
